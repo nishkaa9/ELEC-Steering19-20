@@ -1,4 +1,4 @@
-  // Adding servo library
+// Adding servo library
 #include <Servo.h>
 Servo servo1;
 Servo servo2;          
@@ -111,7 +111,7 @@ void loop() {
   }
   // Resetting the motors if no input
   else if ((LowerLimit <= xValue <= UpperLimit) && (LowerLimit <= yValue <= UpperLimit)) {
-    calibration();
+    //calibration();
   } 
   
   // roll right
@@ -127,7 +127,7 @@ void loop() {
     delay(500);
   } 
   else {
-    calibration();
+    // calibration();
   }
 }
 
@@ -167,5 +167,4 @@ void writeAngles(int one, int two, int three, int four) {
     //delay(10);                                             // waits 15ms for the servo to reach the position
   }
 }
-
 
